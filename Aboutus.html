@@ -1,0 +1,241 @@
+<html>
+   <head> 
+      <style type="text/css">
+
+.header {
+   position:   absolute;
+   top:0px;
+   height:50px;
+   width:100%;
+}
+
+.cssBody {
+   position:   absolute;
+   top:      110px;
+   bottom:      100px;
+   width:       100%;
+   background-image:url("img/call-to-action.jpg") ;
+   background-repeat:no-repeat,repeat;
+   background-size:cover;
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #d56161;
+  justify-content: space-between;
+  overflow: auto;
+}
+ul li {
+  position: relative;
+  margin: 0 20px;
+  list-style: none;
+  display: inline-block;
+  padding: 14px;
+  font-size: 20px;
+}
+ul li a{
+text-decoration: none; 
+cursor: pointer;
+color: rgb(255, 255, 255);
+}
+ul li a:hover {
+   background-color: rgb(129, 123, 123);
+}
+.button{
+  background-color: #d56161;
+  color: aliceblue;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 0px 2px 2px rgb(0,0,0);
+  padding: 15px;
+  min-height: 30px;
+  min-width: 120px;
+}
+.button:hover {
+  background: #a1cde9;
+  transition: 0.7s;
+}
+.button:active{
+  background-color: #ffbf00;
+}
+/*** Footer ***/
+.footer .btn.btn-social {
+    margin-right: 5px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    border: 1px solid rgba(255,255,255,0.5);
+    border-radius: 45px;
+    transition: .3s;
+   height:     170px;
+   width:      200%;
+
+
+
+}
+
+.footer .btn.btn-social:hover {
+    border-color: var(--primary);
+    background: var(--primary);
+}
+
+.footer .btn.btn-link {
+    display: block;
+    margin-bottom: 5px;
+    padding: 0;
+    text-align: center;
+    font-size: 16px;
+    font-weight: normal;
+    text-transform: capitalize;
+    transition: .3s;
+}
+
+.footer .btn.btn-link::before {
+    position: relative;
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+.footer .btn.btn-link:hover {
+    color: var(--primary)!important;
+    letter-spacing: 1px;
+    box-shadow: none;
+}
+
+.footer .form-control {
+    border-color: rgba(255,255,255,0.5);
+}
+
+.footer .copyright {
+    padding: 25px 0;
+    font-size: 15px;
+    border-top: 1px solid rgba(256, 256, 256, .1);
+}
+
+.footer .copyright a {
+    color: #FFFFFF;
+}
+
+.footer .footer-menu a {
+    margin-right: 15px;
+    padding-right: 15px;
+    border-right: 1px solid rgba(255, 255, 255, .1);
+}
+
+.footer .copyright a:hover,
+.footer .footer-menu a:hover {
+    color: var(--primary) !important;
+}
+
+.footer .footer-menu a:last-child {
+    margin-right: 0;
+    padding-right: 0;
+    border-right: none;
+}
+    
+
+      </style> 
+   </head> 
+   <body> 
+      <div class="header"> 
+        <nav>
+            <img th:src="@{/img/logo.pre.jpeg}" width="120px" height="100px" id=logo alt="Logo image" style="margin-left: 10px;" />
+              <ul class="navigationbar">
+                <li><a href="/index">Home</a></li>
+                <li><a href="/Aboutus">About us</a></li>
+                <li><a href="/Classes">Classes</a></li>
+                <li><a href="/Contactus">Contact us</a></li>
+                <li><a href="/Admin">Admin</a></li>
+                <li><a href="/visit"><button type= "button" button class="button">Schedule a visit</a></li>
+                <li><a href="/enroll"><button type= "button" button class="button">Enrollment</a></li>
+                
+        </ul>
+      
+            </nav>
+      </div> 
+      <div class="cssBody"> 
+        
+      </div> 
+      
+      <div class="footer">
+         <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+
+
+                    <div class="col-lg-4 col-md-6">
+                        <h3 class="text-white mb-4">Get In Touch</h3>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>#890 CFG Apartment, Mayur Vihar, Delhi-India.</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>1234567890</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>lrmsinfo@test.com</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                        <h3 class="text-white mb-4">Quick Links</h3>
+                        <a class="btn btn-link text-white-50" href="about.php">About Us</a>
+                        <a class="btn btn-link text-white-50" href="contact.php">Contact Us</a>
+                        <a class="btn btn-link text-white-50" href="classes.php">Classes</a>
+                        <a class="btn btn-link text-white-50" href="admin/">Admin</a>
+                        <a class="btn btn-link text-white-50" href="visit.php">Schedule a Visit</a>
+                        <a class="btn btn-link text-white-50" href="enrollment.php">Enroll Now</a>
+                        <a class="btn btn-link text-white-50" href="admin/">Admin Login</a>
+                    </div>
+                    <div class="col-lg-5 col-md-6">
+                        <h3 class="text-white mb-4">Photo Gallery</h3>
+                        <div class="row g-2 pt-2">
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="img/classes-1.jpg" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="img/classes-2.jpg" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="img/classes-3.jpg" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="img/classes-4.jpg" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="img/classes-5.jpg" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="img/classes-6.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+    
+        </div>        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+          
+      </div>  
+   </body>
+</html>

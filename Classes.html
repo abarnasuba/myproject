@@ -1,0 +1,94 @@
+<html>
+   <head> 
+      <style type="text/css">
+
+.header {
+   position:   absolute;
+   top:0px;
+   height:50px;
+   width:100%;
+}
+.footer {
+   position:   absolute;
+   bottom:    0;
+   height:     100px;
+   width:      100%;
+   background: rgb(253, 253, 253);
+}
+.cssBody {
+   position:   absolute;
+   top:      110px;
+   bottom:      100px;
+   width:       100%;
+   background-image:url("img/carousel-1.jpg") ;
+   background-repeat:no-repeat,repeat;
+   background-size:cover;
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #d56161;
+  justify-content: space-between;
+  overflow: auto;
+}
+ul li {
+  position: relative;
+  margin: 0 20px;
+  list-style: none;
+  display: inline-block;
+  padding: 14px;
+  font-size: 20px;
+}
+ul li a{
+text-decoration: none; 
+cursor: pointer;
+color: rgb(255, 255, 255);
+}
+ul li a:hover {
+   background-color: rgb(129, 123, 123);
+}
+.button{
+  background-color: #d56161;
+  color: aliceblue;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 0px 2px 2px rgb(0,0,0);
+  padding: 15px;
+  min-height: 30px;
+  min-width: 120px;
+}
+.button:hover {
+  background: #a1cde9;
+  transition: 0.7s;
+}
+.button:active{
+  background-color: #ffbf00;
+}
+
+      </style> 
+   </head> 
+   <body> 
+      <div class="header"> 
+        <nav>
+            <img th:src="@{/img/logo.pre.jpeg}" width="120px" height="100px" id=logo alt="Logo image" style="margin-left: 10px;" />
+              <ul class="navigationbar">
+                <li><a href="/index">Home</a></li>
+                <li><a href="/Aboutus">About us</a></li>
+                <li><a href="/Classes">Classes</a></li>
+                <li><a href="/Contactus">Contact us</a></li>
+                <li><a href="/Admin">Admin</a></li>
+                <li><a href="/visit"><button type= "button" button class="button">Schedule a visit</a></li>
+                <li><a href="/enroll"><button type= "button" button class="button">Enrollment</a></li>
+                
+        </ul>
+        
+            </nav>
+      </div> 
+      <div class="cssBody"> 
+      </div> 
+      <div class="footer"> 
+         <p>Footer</p> 
+      </div>  
+   </body>
+</html>

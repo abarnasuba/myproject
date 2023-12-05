@@ -1,0 +1,298 @@
+<html>
+   <head> 
+      <style type="text/css">
+
+.header {
+   position:   absolute;
+   top:0px;
+   height:50px;
+   width:100%;
+}
+.footer {
+   position:   absolute;
+   bottom:    0;
+   height:     100px;
+   width:      100%;
+   background: rgb(249, 249, 249);
+}
+.cssBody {
+   position:   absolute;
+   top:      110px;
+   bottom:      100px;
+   width:       100%;
+   background-image:url("img/carousel-2.jpg") ;
+   background-repeat:no-repeat,repeat;
+   background-size:cover;
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #f6f6f6;
+  justify-content: space-between;
+  overflow: auto;
+}
+ul li {
+  position: relative;
+  margin: 0 20px;
+  list-style: none;
+  display: inline-block;
+  padding: 14px;
+  font-size: 20px;
+}
+ul li a{
+text-decoration: none; 
+cursor: pointer;
+color: rgb(3, 9, 86);
+}
+ul li a:hover {
+   background-color: rgb(252, 252, 252);
+}
+.button{
+  background-color: #2bfdc8;
+  color: aliceblue;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 0px 2px 2px rgb(0,0,0);
+  padding: 15px;
+  min-height: 30px;
+  min-width: 120px;
+}
+.button:hover {
+  background: #a1cde9;
+  transition: 0.7s;
+}
+.button:active{
+  background-color: #ffbf00;
+}
+.mp-3{
+   text-align: center;
+  }
+  .column {
+  float: left;
+  width: 23.5%;
+  padding: 5px;
+}
+.column1{
+   float:left;
+   width: 31.5%;
+   padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: rgb(253, 253, 253);
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+        form {
+	background-color: #FFFFFF;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 50px;
+	height: 100%;
+   width:100%;
+	text-align: center;
+}
+
+input {
+	background-color: #eee;
+	border: none;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 100%;
+}
+
+.container {
+	background-color: #fff;
+	border-radius: 10px;
+  	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	position: relative;
+	overflow: hidden;
+	width: 768px;
+	max-width: 100%;
+	min-height: 480px;
+}
+
+.form-container {
+	position: absolute;
+	top: 0;
+	height: 100%;
+}
+
+.log-in-container {
+	left: 0;
+	width: 50%;
+	z-index: 2;
+}
+
+
+.overlay-container {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 50%;
+	height: 100%;
+}
+
+
+.overlay {
+	background: #FF416C;
+	background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);
+	background: linear-gradient(to right, #FF4B2B, #FF416C);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0 0;
+	color: #FFFFFF;
+	position: relative;
+	left: -100%;
+	height: 100%;
+	width: 200%;
+}
+
+.overlay-panel {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 40px;
+	text-align: center;
+	top: 0;
+	height: 100%;
+	width: 50%;
+}
+
+
+.overlay-right {
+	right: 0;
+}
+
+
+.social-container {
+	margin: 50px 0;
+}
+
+.social-container a {
+	border: 1px solid #DDDDDD;
+	border-radius: 50%;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 5px;
+	height: 40px;
+	width: 40px;
+}
+section
+{
+  background-color: #db1d1d;
+}
+.column2{
+   float:left;
+   width: 31.5%;
+   padding: 5px;
+}
+
+ 
+
+
+</style> 
+   </head> 
+   <body> 
+      <div class="header"> 
+        <nav>
+            <img th:src="@{/img/logo7.png}" width="120px" height="100px" id=logo alt="Logo image" style="margin-left: 10px;" />
+              <ul class="navigationbar">
+                <li><a href="/index">Home</a></li>
+                <li><a href="/Aboutus">About us</a></li>
+                <li><a href="/Classes">Classes</a></li>
+                <li><a href="/Contactus">Contact us</a></li>
+                <li><a href="/Admin">Admin</a></li>
+                <li><a href="/visit"><button type= "button" button class="button">Schedule a visit</a></li>
+                <li><a href="/enroll"><button type= "button" button class="button">Enroll Now</a></li>
+                
+        </ul>
+        
+            </nav>
+      </div> 
+      <div class="cssBody"> 
+      </div> 
+      <div class="footer"> 
+         <div class="PreSchool">
+           <h1 class="mp-3">School Facilities</h1>
+           <div class="row">
+            <div class="column">
+              <img th:src="@{/img/school foot2.webp}" alt="School bus" style="width:100%">
+            </div>
+            <div class="column">
+              <img th:src="@{/img/footer2.jpg}"alt="Playground" style="width:100%">
+            </div>
+            <div class="column">
+              <img th:src="@{/img/footer3.jpg}" alt="Hyginic Cantin" style="width:100%">
+            </div>
+            <div class="column">
+               <img th:src="@{/img/footer5.jpg}" alt="Positive Learning" style="width:100%">
+             </div>
+             </div>
+            <div>
+              <h1 class="mp-3">Classes</h1>
+              <div class="row1">
+                <div class="column1">
+                  <img th:src="@{/img/classes-1.jpg}" alt="Art and Drawing" style="width:100%">
+                </div>
+                <div class="column1">
+                  <img th:src="@{/img/classes-3.jpg}"alt="Dance" style="width:100%">
+                </div>
+                <div class="column1">
+                  <img th:src="@{/img/classes-5.jpg}" alt="Language and Speaking" style="width:100%">
+                </div>
+              </div>
+              <div>
+                <h1 class="mp-3">Teachers</h1>
+                <div class="row1">
+                  <div class="column1">
+                    <img th:src="@{/img/team-1.jpg}" alt="Art and Drawing" style="width:100%">
+                  </div>
+                  <div class="column1">
+                    <img th:src="@{/img/team-2.jpg}"alt="Dance" style="width:100%">
+                  </div>
+                  <div class="column1">
+                    <img th:src="@{/img/team-3.jpg}" alt="Language and Speaking" style="width:100%">
+                  </div>
+                </div>
+              </div>
+        </div>
+      
+</div>
+
+         
+   </body>
+</html>
